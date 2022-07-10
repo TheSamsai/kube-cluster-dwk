@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: part-four-repo
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://github.com/TheSamsai/devops-with-kubernetes-part-4
+  ref:
+    branch: master
